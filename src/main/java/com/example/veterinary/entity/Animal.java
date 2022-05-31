@@ -1,13 +1,13 @@
 package com.example.veterinary.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "animal")
 public class Animal {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id_animal")
     private Long idAnimal;
     private String name;
     private Integer old;

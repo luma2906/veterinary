@@ -11,6 +11,6 @@ public interface IAnimalService {
 
     Optional<Animal> findAnimalById(Long idAnimal);
 
-    Iterable<Animal> getAllAnimals();
+    List<Animal> getAllAnimals();
 
 }
